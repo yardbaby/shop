@@ -1,0 +1,51 @@
+{
+  "name": "shop",
+  "version": "0.0.1",
+  "description": "shop",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon index.js",
+    "lint": "eslint \"src/**/*.js\"",
+    "clean": "del-cli -f dist",
+    "precompile": "npm run clean",
+    "compile": "babel src --out-dir dist",
+    "serve": "cross-env NODE_ENV=production node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yardbaby/shop.git"
+  },
+  "keywords": [
+    "vue",
+    "angular",
+    "node",
+    "express"
+  ],
+  "author": "zxm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yardbaby/shop/issues"
+  },
+  "homepage": "https://github.com/yardbaby/shop#readme",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-register": "^6.11.5",
+    "cross-env": "^2.0.0",
+    "del": "^2.2.1",
+    "del-cli": "^0.2.0",
+    "eslint": "^3.1.1",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-promise": "^2.0.0",
+    "eslint-plugin-standard": "^2.0.0",
+    "express": "^4.14.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-load-plugins": "^1.2.4",
+    "nodemon": "^1.9.2"
+  },
+  "dependencies": {
+    "hbs": "^4.0.0"
+  }
+}
