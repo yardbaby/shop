@@ -1,0 +1,68 @@
+<!-- pages-title-start -->
+  <div class="pages-title section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="pages-title-text text-center">
+            <h2>Register</h2>
+            <ul class="text-left">
+              <li><a href="index.html">Home </a></li>
+              <li><span> // </span>Register</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- pages-title-end -->
+  <!-- login content section start -->
+  <section class="pages login-page section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="main-input padding60">
+            <div class="log-title">
+              <h3><strong>registered customers</strong></h3>
+            </div>
+            <div class="login-text">
+              <div class="custom-input">
+                <p>If you have an account with us, Please log in!</p>
+                <form action="http://codecarnival.net/html/sell-shop-preview/sell-shop/mail.php" method="post">
+                  <input type="text" name="email" placeholder="Email" />
+                  <input type="password" name="password" placeholder="Password" />
+                  <a class="forget" href="#">Forget your password?</a>
+                  <div class="submit-text">
+                    <a href="my-account.html">login</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="main-input padding60 new-customer">
+            <div class="log-title">
+              <h3><strong>新用户</strong></h3>
+            </div>
+            <div class="custom-input">
+              <form action="/account/register" method="post">
+                <input type="text" name="username" placeholder="Name here.." />
+                {{!-- 优雅降级 --}}
+                <input type="email" name="email" placeholder="Email Address.." />
+                <input type="text" name="number" placeholder="Phone Number.." />
+                <input type="password" name="password" placeholder="Password" />
+                <input type="password" name="confirm" placeholder="Confirm Password" />
+                <label class="first-child">
+                  <input type="checkbox" name="agree" value="forever">同意<a href="#" target="_blank">注册协议</a>
+                </label>
+                <div class="submit-text coupon">
+                  <button type="submit">注册</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- login content section end -->
