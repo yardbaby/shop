@@ -1,6 +1,6 @@
-'use strict'
+//'use strict'
 
-1const mysql = require('mysql')
+import mysql from 'mysql'
 
 const pool = mysql.createPool({
   connectionLimit: 10,
@@ -15,6 +15,5 @@ export const query = (...argv) => new Promise((resolve,reject) => {
     if(error) return reject(error)
     resolve(rows)
   }]
-  console.log(arguments.length)
   pool.query(...args)
 })

@@ -39,7 +39,9 @@ hbs.registerHelper('block',(key,context) => {
   }
 })
 //==============解析请求体=================
-
+import bodyParser from 'body-parser'
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 //==============载入路由表=================
 import router from './router'
 app.use(router)
